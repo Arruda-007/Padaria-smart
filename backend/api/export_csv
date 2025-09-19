@@ -1,0 +1,44 @@
+from flask import Flask, jsonify, Response
+import random
+import datetime
+import csv
+import io
+
+app = Flask(__name__)
+
+# Simulação de sensores
+def gerar_dados():
+    return {
+        "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "temperatura_forno": round(random.uniform(180, 250), 2),
+        "estoque_farinha": random.randint(0, 100),
+        "estoque_ovos": random.randint(0, 200),
+        "estoque_leite": random.randint(0, 50),
+        "clientes_hora": random.randint(0, 20),
+        "consumo_energia": round(random.uniform(5.0, 15.0), 2)
+    }
+
+@app.route("/api/sensors")
+def sensores():
+    return jsonify(gerar_dados())
+
+@app.route("/api/generate_report")
+def relatorio():
+    return jsonify({"status": "OK", "mensagem": "Relatório gerado com sucesso."})
+
+# ✅ Novo endpoint para exportar CSV
+@app.route("/api/export_csv")
+def export_csv():
+    dados = [gerar_dados() for _ in range(20)]  # gera 20 linhas de exemplo
+
+    output = io.StringIO()
+    writer = csv.DictWriter(output, fieldnames=dados[0].keys())
+    writer.writeheader()
+    writer.writerows(dados)
+
+    response = Response(output.getvalue(), mimetype="text/csv")
+    response.headers["Content-Disposition"] = "attachment; filename=padaria_dados.csv"
+    return response
+
+if __name__ == "__main__":
+    app.run(debug=True)
