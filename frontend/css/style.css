@@ -63,3 +63,131 @@ h1 {
 button {
   cursor: pointer;
 }
+
+/* ===== Estilos para Gerenciamento ===== */
+#gerenciamento {
+  background: #fdfdfd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#gerenciamento h3 {
+  margin-top: 20px;
+  color: #d35400;
+  border-left: 5px solid #d35400;
+  padding-left: 10px;
+}
+
+#gerenciamento table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#gerenciamento table th {
+  background: #d35400;
+  color: white;
+  text-align: left;
+  padding: 8px;
+}
+
+#gerenciamento table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+#gerenciamento table tr:hover {
+  background: #fbe9e7;
+}
+
+/* Priorização colorida */
+td:contains("Alta") {
+  color: #c0392b;
+  font-weight: bold;
+}
+td:contains("Média") {
+  color: #e67e22;
+  font-weight: bold;
+}
+td:contains("Baixa") {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Riscos */
+#gerenciamento ul {
+  list-style: none;
+  padding: 0;
+}
+#gerenciamento ul li {
+  background: #ffe0b2;
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 5px;
+  border-left: 5px solid #d35400;
+}
+
+/* Priorização com cores */
+.prioridade.alta {
+  color: #c0392b;   /* Vermelho */
+  font-weight: bold;
+}
+
+.prioridade.media {
+  color: #e67e22;   /* Laranja */
+  font-weight: bold;
+}
+
+.prioridade.baixa {
+  color: #27ae60;   /* Verde */
+  font-weight: bold;
+}
+
+/* Estilo da tabela do cronograma */
+.cronograma {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.cronograma th {
+  background: #34495e;
+  color: white;
+  padding: 8px;
+  text-align: left;
+}
+
+.cronograma td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Status coloridos */
+.status {
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+.status.concluido {
+  background: #eafaf1;   /* Verde claro */
+  color: #27ae60;        /* Texto verde */
+  border: 1px solid #27ae60;
+}
+
+.status.andamento {
+  background: #eaf2fb;   /* Azul claro */
+  color: #2980b9;        /* Texto azul */
+  border: 1px solid #2980b9;
+}
+
+.status.pendente {
+  background: #f4f6f6;   /* Cinza bem claro */
+  color: #7f8c8d;        /* Texto cinza */
+  border: 1px solid #7f8c8d;
+}

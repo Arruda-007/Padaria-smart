@@ -20,15 +20,112 @@
     <!-- CONTEÚDO PRINCIPAL -->
     <main class="content">
       <!-- Módulo 1 -->
-      <section id="gerenciamento" class="modulo ativo">
-        <h1>📋 Gerenciamento do Projeto</h1>
-        <p>Aqui ficará o backlog, cronograma e riscos do projeto.</p>
-        <ul>
-          <li>✅ Criar esqueleto do site</li>
-          <li>⏳ Integrar gráficos em tempo real</li>
-          <li>⏳ Criar dashboard no Power BI</li>
-        </ul>
-      </section>
+     <section id="gerenciamento" class="modulo ativo">
+  <h2>Gerenciamento do Projeto</h2>
+  
+  <h3>📋 Backlog</h3>
+  <table border="1" cellpadding="5">
+    <tr>
+      <th>ID</th>
+      <th>User Story</th>
+      <th>Prioridade</th>
+      <th>Status</th>
+    </tr>
+    <tr>
+      <td>US01</td>
+      <td>Como gerente, quero visualizar a lista de tarefas do projeto para acompanhar o progresso</td>
+      <td class="prioridade alta">Alta</td>
+      <td>A fazer</td>
+    </tr>
+    <tr>
+      <td>US02</td>
+      <td>Como gerente, quero registrar os riscos do projeto para planejar soluções</td>
+      <td class="prioridade alta">Alta</td>
+      <td>A fazer</td>
+    </tr>
+    <tr>
+      <td>US03</td>
+      <td>Como gerente, quero um cronograma simples para saber as entregas semanais</td>
+      <td class="prioridade alta">Alta</td>
+      <td>A fazer</td>
+    </tr>
+    <tr>
+      <td>US04</td>
+      <td>Como gerente, quero visualizar dados de sensores (forno, estoque, clientes) em tempo real</td>
+      <td class="prioridade alta">Alta</td>
+      <td>A fazer</td>
+    </tr>
+    <tr>
+      <td>US05</td>
+      <td>Como gerente, quero exportar os dados em CSV para usar no Power BI e Tableau</td>
+      <td class="prioridade media">Media</td>
+      <td>A fazer</td>
+    </tr>
+    <tr>
+      <td>US06</td>
+      <td>Como gerente, quero ver um relatório automático com resumo do status da padaria</td>
+      <td class="prioridade baixa">Baixa</td>
+      <td>A fazer</td>
+    </tr>
+    <tr>
+      <td>US07</td>
+      <td>Como gerente, quero visualizar os indicadores principais (lucro, desperdício, produção)</td>
+      <td class="prioridade alta">Alta</td>
+      <td>A fazer</td>
+    </tr>
+    <tr>
+      <td>US08</td>
+      <td>Como gerente, quero comparar eventos do projeto com impacto nos dados</td>
+      <td class="prioridade alta">Alta</td>
+      <td>A fazer</td>
+    </tr>
+    <tr>
+      <td>US09</td>
+      <td>Como gerente, quero um painel final com todas as análises consolidadas</td>
+      <td class="prioridade alta">Alta</td>
+      <td>A fazer</td>
+    </tr>
+  </table>
+
+  <h3>🗓️ Cronograma</h3>
+<table class="cronograma">
+  <tr>
+    <th>Semana</th>
+    <th>Atividade</th>
+    <th>Status</th>
+  </tr>
+  <tr>
+    <td>1–2</td>
+    <td>Documentação (Backlog, Charter)</td>
+    <td class="status concluido">Concluído</td>
+  </tr>
+  <tr>
+    <td>3–4</td>
+    <td>Backend (simulação de dados)</td>
+    <td class="status andamento">Em andamento</td>
+  </tr>
+  <tr>
+    <td>5–6</td>
+    <td>Frontend (dashboard básico)</td>
+    <td class="status pendente">A fazer</td>
+  </tr>
+  <tr>
+    <td>7–8</td>
+    <td>BI + Relatório final</td>
+    <td class="status pendente">A fazer</td>
+  </tr>
+</table>
+
+
+  <h3>⚠️ Riscos</h3>
+  <ul>
+    <li>Atraso no desenvolvimento</li>
+    <li>Erro na integração backend ↔ frontend</li>
+    <li>Problemas de tempo no grupo</li>
+    <li>Dificuldade de conectar BI</li>
+  </ul>
+</section>
+
 
       <!-- Módulo 2 -->
       <section id="monitoramento" class="modulo">
