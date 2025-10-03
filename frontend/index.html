@@ -2,17 +2,16 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Padaria Inteligente 4.0</title>
+  <title>Bake Maneger</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <div class="container">
     <!-- MENU LATERAL -->
     <aside class="sidebar">
-      <h2>🍞 Padaria 4.0</h2>
+      <h2>🍞 Bakery Manager 4.0</h2>
       <button onclick="mostrarModulo('gerenciamento')">📋 Gerenciamento</button>
-      <button onclick="mostrarModulo('monitoramento')">📊 Monitoramento</button>
+      <button onclick="mostrarModulo('monitoramento')">📊 Monitoramento IOT</button>
       <button onclick="mostrarModulo('analises')">🔎 Análises</button>
       <button onclick="mostrarModulo('relatorios')">📑 Relatórios</button>
     </aside>
@@ -33,55 +32,49 @@
     </tr>
     <tr>
       <td>US01</td>
-      <td>Como gerente, quero visualizar a lista de tarefas do projeto para acompanhar o progresso</td>
+      <td>Como gerente, quero visualizar relatórios inteligentes automáticos, para acompanhar o desempenho da padaria sem precisar gerar análises manuais.</td>
       <td class="prioridade alta">Alta</td>
       <td>A fazer</td>
     </tr>
     <tr>
       <td>US02</td>
-      <td>Como gerente, quero registrar os riscos do projeto para planejar soluções</td>
+      <td>Como gerente, quero ver gráficos de estoque e fluxo de clientes em tempo real, para tomar decisões rápidas sobre reposição e produção.</td>
       <td class="prioridade alta">Alta</td>
       <td>A fazer</td>
     </tr>
     <tr>
       <td>US03</td>
-      <td>Como gerente, quero um cronograma simples para saber as entregas semanais</td>
+      <td>Como padeiro, quero receber alertas sobre a temperatura do forno, para garantir que os pães assam na qualidade correta.</td>
       <td class="prioridade alta">Alta</td>
       <td>A fazer</td>
     </tr>
     <tr>
       <td>US04</td>
-      <td>Como gerente, quero visualizar dados de sensores (forno, estoque, clientes) em tempo real</td>
+      <td>Como padeiro, quero consultar o consumo de energia dos equipamentos, para otimizar o uso durante os horários de menor custo.</td>
       <td class="prioridade alta">Alta</td>
       <td>A fazer</td>
     </tr>
     <tr>
       <td>US05</td>
-      <td>Como gerente, quero exportar os dados em CSV para usar no Power BI e Tableau</td>
+      <td>Como estoquista, quero monitorar os níveis de farinha, ovos e leite em tempo real, para evitar que a produção pare por falta de insumos.</td>
       <td class="prioridade media">Media</td>
       <td>A fazer</td>
     </tr>
     <tr>
       <td>US06</td>
-      <td>Como gerente, quero ver um relatório automático com resumo do status da padaria</td>
+      <td>Como estoquista, quero receber avisos de estoque baixo, para planejar as compras com antecedência.</td>
       <td class="prioridade baixa">Baixa</td>
       <td>A fazer</td>
     </tr>
     <tr>
       <td>US07</td>
-      <td>Como gerente, quero visualizar os indicadores principais (lucro, desperdício, produção)</td>
+      <td>Como administrador de sistemas, quero que os dados dos sensores sejam armazenados automaticamente em um banco de dados/CSV, para manter histórico confiável.</td>
       <td class="prioridade alta">Alta</td>
       <td>A fazer</td>
     </tr>
     <tr>
       <td>US08</td>
-      <td>Como gerente, quero comparar eventos do projeto com impacto nos dados</td>
-      <td class="prioridade alta">Alta</td>
-      <td>A fazer</td>
-    </tr>
-    <tr>
-      <td>US09</td>
-      <td>Como gerente, quero um painel final com todas as análises consolidadas</td>
+      <td>Como administrador de sistemas, quero configurar backups automáticos dos relatórios, para garantir que nenhuma informação importante seja perdida.</td>
       <td class="prioridade alta">Alta</td>
       <td>A fazer</td>
     </tr>
@@ -148,6 +141,8 @@
     </main>
   </div>
 
+<!-- Bibliotecas -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
